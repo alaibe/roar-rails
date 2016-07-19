@@ -32,8 +32,8 @@ module Roar
     elsif rails_version.~ 4.2
       require 'roar/rails/rails4_2_strategy'
     else
-      # fallback to 4.0 strategy
-      require 'roar/rails/rails4_0_strategy'
+      # fallback to 4.2 strategy
+      require 'roar/rails/rails4_2_strategy'
     end
 
     autoload("TestCase", "roar/rails/test_case")
